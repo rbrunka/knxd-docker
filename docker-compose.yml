@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  knxd:
+    restart: always
+    build:
+      context: ./knxd
+      dockerfile: Dockerfile
+    container_name: knxd
+    hostname: knxd
+    ports:
+      - "3671:3671"
+    devices:
+      - "/dev/ttyAMA0:/dev/ttyAMA0"
