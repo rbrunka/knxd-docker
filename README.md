@@ -13,7 +13,7 @@ sudo systemctl disable serial-getty@ttyS0.service
 sudo systemctl mask serial-getty@ttyS0.service
 ```
 
-3. Neue Datei /etc/udev/rules.d/10-local.rules erstellen:
+3. Neue Datei `/etc/udev/rules.d/10-local.rules` erstellen:
 
 ```
 KERNEL=="ttyS0", SYMLINK+="serial0" GROUP="tty" MODE="0660"
@@ -34,7 +34,7 @@ Bei mir sieht die Datei jetzt so aus:
 net.ifnames=0 dwc_otg.lpm_enable=0 console=tty1 root=LABEL=writable rootfstype=ext4 elevator=deadline rootwait fixrtc
 ```
 
-6. Bluetooth muss in der Datei /boot/firmware/usercfg.txt abgeschaltet werden:
+6. Bluetooth muss in der Datei `/boot/firmware/usercfg.txt` abgeschaltet werden:
 Code:
 ```
 # Place "config.txt" changes (dtparam, dtoverlay, disable_overscan, etc.) in
