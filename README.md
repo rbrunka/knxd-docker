@@ -29,6 +29,5 @@ Code:
 `# Place "config.txt" changes (dtparam, dtoverlay, disable_overscan, etc.) in
 # this file. Please refer to the README file for a description of the various
 # configuration files on the boot partition.
-
 dtoverlay=disable-bt`
 7. `docker-compose up -d`
