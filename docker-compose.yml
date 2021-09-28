@@ -12,3 +12,4 @@ services:
       - "3671:3671"
     devices:
       - "/dev/ttyAMA0:/dev/ttyAMA0"
+    network_mode: "host"
