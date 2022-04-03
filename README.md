@@ -19,9 +19,9 @@ The serial interface is enabled
 
 4. /etc/boot.config um volgende Zeilen erweitern:
 <code>
-[all]
-enable_uart=1
-dtoverlay=disable-wifi
+[all]<br>
+enable_uart=1<br>
+dtoverlay=disable-wifi<br>
 dtoverlay=disable-bt
 </code>
 
