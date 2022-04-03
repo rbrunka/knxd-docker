@@ -14,8 +14,10 @@ Die Schritte:
 `3. Interface Options -> Serial Port -> No -> Yes`
 
 Der richtige Output ist:
+<pre><code>
 The serial login shell is disabled
 The serial interface is enabled
+</code></pre>
 
 4. /etc/boot.config um volgende Zeilen erweitern:
 <pre><code>
