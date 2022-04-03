@@ -27,9 +27,10 @@ dtoverlay=disable-bt
 
 5. `reboot`
 
-4. Das Repo clonen: `git clone https://github.com/rbrunka/knxd-docker.git`
+6. Das Repo clonen: `git clone https://github.com/rbrunka/knxd-docker.git`
 
 Bei Bedarf die `knxd/entrypoint.sh` anpassen.
 Nach jeder Anpassung `docker-compose build` nicht vergessen.
 
-5. `docker-compose up -d`
+7. `docker-compose up -d`
+Fertig.
