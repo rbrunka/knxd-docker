@@ -18,12 +18,12 @@ The serial login shell is disabled
 The serial interface is enabled
 
 4. /etc/boot.config um volgende Zeilen erweitern:
-<code>
-[all]<br>
-enable_uart=1<br>
-dtoverlay=disable-wifi<br>
+<pre><code>
+[all]
+enable_uart=1
+dtoverlay=disable-wifi
 dtoverlay=disable-bt
-</code>
+</code></pre>
 
 5. `reboot`
 
