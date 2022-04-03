@@ -8,26 +8,26 @@ Getestet mit Raspbian Lite (bullseye, 64bit)
 Die Schritte:
 1. BAOS-Modul anschliessen und Strom anschalten.
 
-2. Docker und docker-compose installieren
+2. Docker (https://docs.docker.com/engine/install/debian/) und docker-compose (https://docs.docker.com/compose/install/) installieren 
 
 3. `raspi-config` starten und:
 `3. Interface Options -> Serial Port -> No -> Yes`
 
 Der richtige Output ist:
-`The serial login shell is disabled                       │
-The serial interface is enabled`
+```The serial login shell is disabled
+The serial interface is enabled```
 
 4. /etc/boot.config um volgende Zeilen erweitern:
-`[all]
+```[all]
 enable_uart=1
 dtoverlay=disable-wifi
-dtoverlay=disable-bt`
+dtoverlay=disable-bt```
 
 5. `reboot`
 
 4. Das Repo clonen: `git clone https://github.com/rbrunka/knxd-docker.git`
 
-7. `docker-compose up -d`
+Bei Bedarf die `knxd/entrypoint.sh` anpassen.
+Nach jeder Anpassung `docker-compose build` nicht vergessen.
 
-**
-Bei Bedarf die `entrypoint.sh` anpassen.
+5. `docker-compose up -d`
