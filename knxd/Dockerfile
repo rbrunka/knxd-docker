@@ -1,4 +1,4 @@
-FROM debian:buster-slim AS knxd
+FROM debian:bullseye-slim AS knxd
 
 RUN apt-get update \
     && apt-get upgrade -y \
