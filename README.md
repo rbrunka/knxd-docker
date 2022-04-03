@@ -14,14 +14,16 @@ Die Schritte:
 `3. Interface Options -> Serial Port -> No -> Yes`
 
 Der richtige Output ist:
-```The serial login shell is disabled
-The serial interface is enabled```
+The serial login shell is disabled
+The serial interface is enabled
 
 4. /etc/boot.config um volgende Zeilen erweitern:
-```[all]
+<code>
+[all]
 enable_uart=1
 dtoverlay=disable-wifi
-dtoverlay=disable-bt```
+dtoverlay=disable-bt
+</code>
 
 5. `reboot`
 
